@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/thymeleaf
+      ?useUnicode=true
+      &createDatabaseIfNotExist=true
+      &useJDBCCompliantTimezoneShift=true
+      &useLegacyDatetimeCode=false
+      &serverTimezone=UTC
+
+server:
+  port: 7070
+
