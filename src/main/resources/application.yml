@@ -11,6 +11,8 @@ spring:
       &useJDBCCompliantTimezoneShift=true
       &useLegacyDatetimeCode=false
       &serverTimezone=UTC
+    username: root
+    password: 1234
 
 server:
   port: 7070

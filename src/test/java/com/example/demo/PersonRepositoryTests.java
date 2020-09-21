@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @SpringBootTest
-class PersonControllerTests {
+class PersonRepositoryTests {
 
     @Autowired
     private PersonRepository repository;

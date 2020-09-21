@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+Line 5 is the definition of a thymeleaf html page!!! (***xml- ns - the ns is name space)
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>All Persons</title>
 </head>
 <body>
-$END$
+    <table>
+        <!--table head:-->
+        <thead>
+            <!--table row:-->
+            <tr>
+                <!--table headers:-->
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <!--table body:-->
+        <tbody>
+            <!--table rows:-->
+            <!--Accessing the Object - *all* from *PersonController*-->
+            <tr th:each="person: ${all}">
+                <td th:text="${person.id}"></td>
+                <td th:text="${person.firstName}"></td>
+                <td th:text="${person.lastName}"></td>
+                <td th:text="${person.age}"></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
